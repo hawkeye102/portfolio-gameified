@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gameified Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+
+        canvas {
+            display: block; /* Ensures canvas takes full space without gaps */
+        }
+
+        .portfolio-info {
+            position: absolute;
+            top: 20px; /* Adjust as needed */
+            left: 50%; /* Center horizontally */
+            transform: translateX(-50%); /* Adjust to center */
+            display: flex;
+            justify-content: space-between; /* Spread the sections */
+            width: 80%; /* Adjust width as needed */
+            z-index: 100; /* Ensure it's on top */
+            color: black; /* Ensure text is visible */
+        }
+
+        .left-section, .right-section {
+            width: 45%; /* Each section takes 45% of the parent width */
+            background: rgba(255, 255, 255, 0.9); /* Background for visibility */
+            padding: 10px; /* Padding inside sections */
+            border-radius: 5px; /* Rounded corners */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Shadow for effect */
+        }
+
+        .portfolio-box {
+          font-weight: 500;
+    margin-bottom: 10px; /* Spacing between portfolio items */
+    padding: 10px; /* Padding for items */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    max-width: 300px; /* Set a maximum width for the box */
+    word-wrap: break-word; /* Ensures long words wrap within the box */
+}
+
+
+        h2, h3 {
+            margin: 0; /* Remove default margins */
+        }
+    </style>
+</head>
+<body>
+    <canvas class="draw"></canvas>
+    <div class="portfolio-info" id="portfolio-info">
+        <!-- Dynamic content will be added here -->
+    </div>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
+
+
+
+
+
